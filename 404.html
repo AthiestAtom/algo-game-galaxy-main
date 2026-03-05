@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Redirect all 404s to the index.html with the current path
+    var path = window.location.pathname;
+    var segments = path.split('/');
+    if (segments[1] === 'algo-game-galaxy-main') {
+      // Remove the repository name from the path
+      segments.splice(1, 1);
+      var newPath = segments.join('/') || '/';
+      window.location.href = '/algo-game-galaxy-main/' + newPath;
+    } else {
+      window.location.href = '/algo-game-galaxy-main/';
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

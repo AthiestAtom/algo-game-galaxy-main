@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/algo-game-galaxy-main/",
+  base: "/",
   server: {
     host: "::",
     port: 8080,
