@@ -28,8 +28,8 @@ const VideoBackground = () => {
           minWidth: '177.77vh',
           minHeight: '100vh',
           transform: 'translate(-50%, -50%) scale(1.1)',
-          filter: 'blur(1px) brightness(0.7)',
-          opacity: isLoaded ? 0.8 : 0,
+          filter: 'blur(0px) brightness(1)',
+          opacity: isLoaded ? 1 : 0,
           transition: 'opacity 2s ease-in-out',
           pointerEvents: 'none',
           zIndex: -1
@@ -56,7 +56,7 @@ const VideoBackground = () => {
       
       {/* Scanlines effect for retro gaming feel */}
       <div 
-        className="fixed inset-0 opacity-8"
+        className="fixed inset-0 opacity-3"
         style={{
           position: 'fixed',
           top: 0,
@@ -64,7 +64,7 @@ const VideoBackground = () => {
           width: '100vw',
           height: '100vh',
           zIndex: -1,
-          backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.1) 2px, rgba(255,255,255,0.1) 4px)',
+          backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.03) 2px, rgba(255,255,255,0.03) 4px)',
           animation: 'scanlines 8s linear infinite'
         }}
       />
