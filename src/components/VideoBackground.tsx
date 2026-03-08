@@ -85,22 +85,6 @@ const VideoBackground = () => {
         </div>
       )}
 
-      {/* Pokemon Emerald Style UI Elements */}
-      <div className="fixed top-4 left-4 bg-emerald-800/80 backdrop-blur-sm px-4 py-2 rounded-lg border-2 border-emerald-400 shadow-lg z-40" style={{ zIndex: 50 }}>
-        <div className="text-white font-bold text-sm">POKÉMON EMERALD</div>
-        <div className="text-emerald-200 text-xs">TEXTILE RECYCLING EDITION</div>
-      </div>
-      
-      <div className="fixed top-4 right-4 bg-emerald-800/80 backdrop-blur-sm px-4 py-2 rounded-lg border-2 border-emerald-400 shadow-lg z-40" style={{ zIndex: 50 }}>
-        <div className="text-white font-bold text-sm">CHANDIGARH REGION</div>
-        <div className="text-emerald-200 text-xs">SECTORS: 1-56</div>
-      </div>
-      
-      <div className="fixed bottom-4 left-4 bg-emerald-800/80 backdrop-blur-sm px-4 py-2 rounded-lg border-2 border-emerald-400 shadow-lg z-40" style={{ zIndex: 50 }}>
-        <div className="text-white font-bold text-sm">⏱️ TIME: {new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}</div>
-        <div className="text-emerald-200 text-xs">📍 SECTOR 17</div>
-      </div>
-
       <style>{`
         @keyframes scanlines {
           0% { transform: translateY(0); }
