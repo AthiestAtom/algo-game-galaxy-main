@@ -9,7 +9,7 @@ import NodeBlock from '@/components/NodeBlock';
 import ControlPanel from '@/components/ControlPanel';
 import PseudocodePanel from '@/components/PseudocodePanel';
 import ChallengeModePanel, { Challenge } from '@/components/ChallengeModePanel';
-import VideoBackground from '../components/VideoBackground';
+// import VideoBackground from '../components/VideoBackground';
 import { toast } from 'sonner';
 import { Star, Trophy } from 'lucide-react';
 
@@ -254,8 +254,8 @@ const Index = () => {
   const totalStars = Object.values(completedChallenges).reduce((sum, c) => sum + c.stars, 0);
 
   return (
-    <div className="min-h-screen relative">
-      <VideoBackground />
+    <div className="min-h-screen relative bg-background grid-bg">
+      {/* <VideoBackground /> */}
       <div className="relative z-10">
         {/* Header */}
         <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-10">
