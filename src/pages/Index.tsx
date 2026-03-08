@@ -9,6 +9,7 @@ import NodeBlock from '@/components/NodeBlock';
 import ControlPanel from '@/components/ControlPanel';
 import PseudocodePanel from '@/components/PseudocodePanel';
 import ChallengeModePanel, { Challenge } from '@/components/ChallengeModePanel';
+import VideoBackground from '@/components/VideoBackground';
 import { toast } from 'sonner';
 import { Star, Trophy } from 'lucide-react';
 
@@ -253,9 +254,11 @@ const Index = () => {
   const totalStars = Object.values(completedChallenges).reduce((sum, c) => sum + c.stars, 0);
 
   return (
-    <div className="min-h-screen bg-background grid-bg">
-      {/* Header */}
-      <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-10">
+    <div className="min-h-screen relative">
+      <VideoBackground />
+      <div className="relative z-10">
+        {/* Header */}
+        <header className="border-b border-border bg-card/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <h1 className="text-xl sm:text-2xl font-display font-bold neon-text-cyan tracking-wider">
@@ -351,6 +354,7 @@ const Index = () => {
             />
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
