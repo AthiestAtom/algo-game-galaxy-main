@@ -9,7 +9,7 @@ import NodeBlock from '@/components/NodeBlock';
 import ControlPanel from '@/components/ControlPanel';
 import PseudocodePanel from '@/components/PseudocodePanel';
 import ChallengeModePanel, { Challenge } from '@/components/ChallengeModePanel';
-import VideoBackground from '@/components/VideoBackground';
+import VideoBackground from '../components/VideoBackground';
 import { toast } from 'sonner';
 import { Star, Trophy } from 'lucide-react';
 
